@@ -19,13 +19,13 @@ def len_of_string(input_string):
     return_list = [input_string, len(input_string)]
     return return_list
 
+if __name__ == "__main__":
+    # create a list of strings that is at least ten strings long
+    list_of_strings = ["A", "list", "of", "strings", "that", "is", "at", "least", "ten", "items", "long"]
 
-# create a list of strings that is at least ten strings long
-list_of_strings = ["A", "list", "of", "strings", "that", "is", "at", "least", "ten", "items", "long"]
+    # use the map function to map the list of strings to the function and covert it to a list of lists
+    list_of_lists = list(map(len_of_string, list_of_strings))
 
-# use the map function to map the list of strings to the function and covert it to a list of lists
-list_of_lists = list(map(len_of_string, list_of_strings))
-
-# output the length of each string (can use a for loop for to output this information)
-for item in list_of_lists:
-    print(str(item[1]), end=', ')
+    # output the length of each string (can use a for loop for to output this information)
+    for item in list_of_lists:
+        print(str(item[1]), end=', ')
