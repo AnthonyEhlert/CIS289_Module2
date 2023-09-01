@@ -12,6 +12,7 @@ def shortest_path(graph, start_node, end_node, path = []):
     :param graph: the graph to be searched
     :param start_node: starting node
     :param end_node: ending node
+    :param: path: current path (default empty list)
     :return: list of nodes contained in the shortest path between the start and end nodes
     """
     # create initial path
